@@ -83,7 +83,9 @@ static const Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ 0,				XF86XK_AudioRaiseVolume,   {.v = volraise   } }, 
 	{ 0,				XF86XK_AudioLowerVolume,   {.v = vollower   } }, 
-	{ 0,				XF86XK_AudioMute,          {.v = voltoggle  } }, 
+	{ 0,				XF86XK_AudioMute,          {.v = voltoggle  } },
+	{ MODKEY|ShiftMask,		XK_s,	   spawn,	   {.v = scrnsht    } },
+	{ MODKEY,			XK_PrtScrn, spawn,	   {.v = fscnsht    } },
 	{ MODKEY,                       XK_d,      spawn,          {.v = roficmd    } },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd    } },
 	{ MODKEY,                       XK_b,      spawn,      	   {.v = btconcmd   } },
